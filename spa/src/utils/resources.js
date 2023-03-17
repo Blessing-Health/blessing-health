@@ -13,6 +13,7 @@ export function get(endpoint, params = []) {
 }
 
 export function post(endpoint, data) {
+  console.log(apiUrl(endpoint));
   return window.axios.post(apiUrl(endpoint), data).then(({ data }) => data);
 }
 

@@ -16,6 +16,12 @@
     <q-list class="q-mt-md">
       <sidebar-item to="/" title="Dashboard" :icon="entityIcons.dashboard" />
       <sidebar-item to="users" title="Users" :icon="entityIcons.users" />
+      <sidebar-item to="roles" title="Roles" :icon="entityIcons.users" />
+      <sidebar-item
+        to="permissions"
+        title="Permissions"
+        :icon="entityIcons.users"
+      />
     </q-list>
   </q-drawer>
 </template>

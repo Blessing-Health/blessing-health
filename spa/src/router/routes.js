@@ -11,6 +11,14 @@ const routes = [
         path: "users",
         component: () => import("src/pages/UsersPage.vue"),
       },
+      {
+        path: "roles",
+        component: () => import("src/pages/Roles.vue"),
+      },
+      {
+        path: "permissions",
+        component: () => import("src/pages/Permissions.vue"),
+      },
     ],
   },
   {

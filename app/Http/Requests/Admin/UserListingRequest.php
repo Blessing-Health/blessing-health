@@ -16,7 +16,7 @@ class UserListingRequest extends FormRequest
 
     public function applyListingFilters($builder)
     {
-        if($this->quicksearch){
+        if ($this->quicksearch) {
             return $builder->withTrashed();
         }
 

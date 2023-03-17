@@ -13,17 +13,11 @@ import {
   actionsColumn,
 } from "src/components/datatables/datatableColumnBuilder.js";
 const tableProps = {
-  url: "users",
+  url: "permissions",
   paginationDefaults: {
     sort_by: "updated_at",
     descending: true,
   },
-  columns: [
-    column("name"),
-    column("email"),
-    column("roles").setUnsortable(),
-    actionsColumn(),
-  ],
+  columns: [column("name"), column("permission"), actionsColumn()],
 };
-//
 </script>

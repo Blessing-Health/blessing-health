@@ -11,7 +11,7 @@ export const useAuthStore = defineStore("auth", {
   },
   actions: {
     async login(form) {
-      this.user = await post(`${appUrl}/login`, form);
+      // this.user = await post(`${appUrl}/login`, form);
     },
     async logout() {
       await post(`${appUrl}/logout`).catch(() => {});
