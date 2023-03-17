@@ -7,6 +7,10 @@ const routes = [
         path: "",
         component: () => import("src/pages/DashBoard.vue"),
       },
+      {
+        path: "users",
+        component: () => import("src/pages/UsersPage.vue"),
+      },
     ],
   },
   {
@@ -15,7 +19,7 @@ const routes = [
     children: [
       {
         path: "login",
-        component: () => import("pages/LoginPage.vue"),
+        component: () => import("src/pages/LoginPage.vue"),
       },
     ],
   },

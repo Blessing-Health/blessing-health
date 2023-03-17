@@ -2,7 +2,7 @@
   "name": "cryptoloan",
   "version": "0.0.1",
   "description": "A dashboard for 2 loan app",
-  "productName": "Crypto Loan Dashboard",
+  "productName": "Dashboard",
   "author": "SaddamDeveloper <sishack8@gmail.com>",
   "private": true,
   "scripts": {

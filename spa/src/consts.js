@@ -1,4 +1,4 @@
-export const appName = "Crypto Loan";
+export const appName = "Dashboard";
 export const version = "1.1.0";
 export const appUrl = `http://localhost:8000/api`;
 export const localForageKeys = {
