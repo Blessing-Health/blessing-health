@@ -2,9 +2,7 @@
 
 namespace App\Models;
 
-// use Illuminate\Contracts\Auth\MustVerifyEmail;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
-use Illuminate\Database\Eloquent\Relations\HasMany;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
 use Laravel\Sanctum\HasApiTokens;
@@ -15,8 +13,13 @@ class User extends Authenticatable
     use HasRoles, HasApiTokens, HasFactory, Notifiable;
 
     protected $hidden = ['password'];
-    public function news() : HasMany
+    protected $fillable = ['name', 'email', 'password', 'roles'];
+
+    public function scopeListing($q)
     {
-        return $this->hasMany(News::class, 'created_by');
+        $q
+            ->select([
+                'users.name', 'users.email'
+            ]);
     }
 }
