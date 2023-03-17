@@ -5,6 +5,7 @@
 
     <q-page-container>
       <div class="q-px-md q-pb-xl" style="overflow: hidden">
+        <page-title />
         <router-view #default="{ Component }">
           <page-transition>
             <component :is="Component" />
@@ -16,6 +17,7 @@
 </template>
 
 <script setup>
+import PageTitle from "./common/PageTitle.vue";
 import PageTransition from "./common/PageTransition.vue";
 import SideBar from "./sidebar/SideBar.vue";
 import TopBar from "./topbar/TopBar.vue";

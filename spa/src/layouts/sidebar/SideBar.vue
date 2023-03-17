@@ -15,13 +15,20 @@
     </q-toolbar>
     <q-list class="q-mt-md">
       <sidebar-item to="/" title="Dashboard" :icon="entityIcons.dashboard" />
-      <sidebar-item to="users" title="Users" :icon="entityIcons.users" />
-      <sidebar-item to="roles" title="Roles" :icon="entityIcons.users" />
-      <sidebar-item
-        to="permissions"
-        title="Permissions"
+      <q-expansion-item
+        :content-inset-level="0.25"
         :icon="entityIcons.users"
-      />
+        label="Users"
+        group="submenu"
+      >
+        <sidebar-item to="users" title="Users" :icon="entityIcons.users" />
+        <sidebar-item to="roles" title="Roles" :icon="entityIcons.users" />
+        <sidebar-item
+          to="permissions"
+          title="Permissions"
+          :icon="entityIcons.users"
+        />
+      </q-expansion-item>
     </q-list>
   </q-drawer>
 </template>

@@ -93,6 +93,7 @@ import { computed, isReactive, onMounted, reactive, ref, watch } from "vue";
 import { get } from "../../utils/resources.js";
 import { debounce } from "lodash-es";
 import { actionsColumn } from "./datatableColumnBuilder.js";
+console.log(23);
 
 const props = defineProps({
   url: String,
@@ -109,6 +110,7 @@ const props = defineProps({
   },
 });
 
+console.log(props);
 const isLoading = ref(true);
 const quicksearch = ref();
 const totalRows = ref(0);

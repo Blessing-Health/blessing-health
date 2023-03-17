@@ -1,0 +1,19 @@
+<?php
+
+namespace App\Http\Controllers\Admin;
+
+use App\Helpers\DatatableBuilder;
+use App\Http\Controllers\Controller;
+use Illuminate\Http\Request;
+use Spatie\Permission\Models\Role;
+
+class RoleController extends Controller
+{
+    public function index(Request $request)
+    {
+        Role
+        return new DatatableBuilder(
+            $request->
+        )
+    }
+}

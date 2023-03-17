@@ -1,5 +1,6 @@
 <template>
-  <datatable v-bind="tableProps">
+  <datatable v-bind="tableProps" no-auto-focus class="q-mb-md">
+    sasas
     <template #column-name="{ value }">
       {{ value }}
     </template>
@@ -7,7 +8,7 @@
 </template>
 
 <script setup>
-import Datatable from "src/components/datatables/Datatable.vue";
+import Datatable from "components/datatables/Datatable.vue";
 import {
   column,
   actionsColumn,
@@ -25,5 +26,4 @@ const tableProps = {
     actionsColumn(),
   ],
 };
-//
 </script>
