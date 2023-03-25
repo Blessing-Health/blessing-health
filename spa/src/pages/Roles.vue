@@ -1,14 +1,23 @@
 <template>
   <page-wrapper>
-    <div class="row">
-      <div class="col-12">
-        <h4 class="q-mt-md">Roles</h4>
-        <roles-datatable />
-      </div>
-    </div>
+    <roles-datatable />
+    <template #page-actions>
+      <add-button fab :to="{ name: 'create_role' }" />
+    </template>
   </page-wrapper>
 </template>
 
 <script setup>
+import { useAppStore } from "src/stores/appStore";
+import { entityIcons } from "src/utils/icons";
 import RolesDatatable from "./RolesDatatable.vue";
+const appStore = useAppStore();
+
+appStore.setPageInfo({
+  title: "Role",
+  section: "Roles Management",
+  subtitle: "Showing the master roles",
+  icon: entityIcons.priceLists,
+  officeId: "auto",
+});
 </script>

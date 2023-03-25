@@ -11,9 +11,18 @@ const routes = [
         path: "users",
         component: () => import("src/pages/UsersPage.vue"),
       },
+      ////////////////////////////////////////////////////////////
+      // Role Managment//
+      ////////////////////////////////////////////////////////////
       {
         path: "roles",
+        name: "roles",
         component: () => import("src/pages/Roles.vue"),
+      },
+      {
+        path: "create_roles",
+        name: "create-roles",
+        component: () => import("src/pages/RoleForm.vue"),
       },
       {
         path: "permissions",

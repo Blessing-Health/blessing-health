@@ -8,6 +8,7 @@ import axiosErrorHandler from "src/utils/axiosErrorHandler.js";
 import PageWrapper from "layouts/common/PageWrapper.vue";
 import CustomInput from "components/common/CustomInput.vue";
 import AddButton from "components/buttons/AddButton.vue";
+import Placeholder from "components/Placeholder.vue";
 
 // "async" is optional;
 // more info on params: https://v2.quasar.dev/quasar-cli/boot-files
@@ -40,4 +41,5 @@ function mountGlobalVueComponent(app) {
   app.component("PageWrapper", PageWrapper);
   app.component("CustomInput", CustomInput);
   app.component("AddButton", AddButton);
+  app.component("Placeholder", Placeholder);
 }
