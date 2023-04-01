@@ -13,6 +13,7 @@
   "dependencies": {
     "@quasar/extras": "^1.0.0",
     "axios": "^0.21.1",
+    "dayjs": "^1.11.7",
     "localforage": "^1.10.0",
     "lodash-es": "^4.17.21",
     "pinia": "^2.0.29",

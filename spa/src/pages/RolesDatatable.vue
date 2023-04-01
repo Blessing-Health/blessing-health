@@ -3,11 +3,19 @@
     <template #column-name="{ value }">
       {{ value }}
     </template>
+    <template #column-actions="{ row }">
+      <action-renderer
+        :row="row"
+        :edit="(row) => ({ name: 'edit-roles', params: { id: row.id } })"
+      />
+    </template>
   </datatable>
 </template>
 
 <script setup>
 import Datatable from "src/components/datatables/Datatable.vue";
+import ActionRenderer from "src/components/datatables/renderers/ActionRenderer.vue";
+
 import {
   column,
   actionsColumn,
@@ -18,6 +26,6 @@ const tableProps = {
     sort_by: "updated_at",
     descending: true,
   },
-  columns: [column("name"), column("role"), actionsColumn()],
+  columns: [column("name"), actionsColumn()],
 };
 </script>

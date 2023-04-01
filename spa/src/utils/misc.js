@@ -1,4 +1,6 @@
 import { isFunction, isObjectLike } from "lodash-es";
+import { AppFile } from "src/classes/appFile";
+import { AppImage } from "src/classes/appImage";
 
 export function attachToFormData(
   valueToAttach,

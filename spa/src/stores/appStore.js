@@ -4,6 +4,7 @@ export const useAppStore = defineStore("app", {
   state: () => ({
     sidebarIsOpen: false,
     isLoading: true,
+    isFillingOutForm: false,
     // Page metadata - you should call setPageInfo on every new page
     page: {
       title: "Untitled Page",
@@ -34,6 +35,9 @@ export const useAppStore = defineStore("app", {
       document.title = pageConfig.title
         ? `${pageConfig.title} • ${appName}`
         : appName;
+    },
+    setIsFillingOutForm(isFillingOutForm) {
+      this.isFillingOutForm = isFillingOutForm;
     },
   },
 });
