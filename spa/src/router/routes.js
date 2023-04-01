@@ -7,6 +7,16 @@ const routes = [
         path: "",
         component: () => import("src/pages/DashBoard.vue"),
       },
+      ////////////////////////////////////////////////////////////
+      // Mitras Managment//
+      ////////////////////////////////////////////////////////////
+      {
+        path: "mitras",
+        component: () => import("src/pages/MitrasPage.vue"),
+      },
+      ////////////////////////////////////////////////////////////
+      // User Managment//
+      ////////////////////////////////////////////////////////////
       {
         path: "users",
         component: () => import("src/pages/UsersPage.vue"),
@@ -24,9 +34,18 @@ const routes = [
         name: "create_roles",
         component: () => import("src/pages/RoleForm.vue"),
       },
+      ///////////////////////////////////////////////////////////
+      // Permission Managment//
+      ////////////////////////////////////////////////////////////
       {
         path: "permissions",
+        name: "permissions",
         component: () => import("src/pages/Permissions.vue"),
+      },
+      {
+        path: "create-permissions",
+        name: "create_permissions",
+        component: () => import("src/pages/PermissionFormPage.vue"),
       },
     ],
   },

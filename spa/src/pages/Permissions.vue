@@ -2,7 +2,7 @@
   <page-wrapper>
     <permissions-datatable />
     <template #page-actions>
-      <add-button fab :to="{ name: 'create_permission' }" />
+      <add-button fab :to="{ name: 'create_permissions' }" />
     </template>
   </page-wrapper>
 </template>
