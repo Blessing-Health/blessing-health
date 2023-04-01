@@ -9,6 +9,10 @@ import PageWrapper from "layouts/common/PageWrapper.vue";
 import CustomInput from "components/common/CustomInput.vue";
 import AddButton from "components/buttons/AddButton.vue";
 import Placeholder from "components/Placeholder.vue";
+import FormWrapper from "components/forms/FormWrapper.vue";
+import FormSectionTitle from "components/forms/FormSectionTitle.vue";
+import FormRow from "components/forms/FormRow.vue";
+import FormInput from "components/forms/FormInput.vue";
 
 // "async" is optional;
 // more info on params: https://v2.quasar.dev/quasar-cli/boot-files
@@ -42,4 +46,8 @@ function mountGlobalVueComponent(app) {
   app.component("CustomInput", CustomInput);
   app.component("AddButton", AddButton);
   app.component("Placeholder", Placeholder);
+  app.component("FormWrapper", FormWrapper);
+  app.component("FormSectionTitle", FormSectionTitle);
+  app.component("FormRow", FormRow);
+  app.component("FormInput", FormInput);
 }

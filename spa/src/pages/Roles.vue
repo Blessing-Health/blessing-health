@@ -2,7 +2,7 @@
   <page-wrapper>
     <roles-datatable />
     <template #page-actions>
-      <add-button fab :to="{ name: 'create_role' }" />
+      <add-button fab :to="{ name: 'create_roles' }" />
     </template>
   </page-wrapper>
 </template>

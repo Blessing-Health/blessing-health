@@ -15,6 +15,8 @@
     </q-toolbar>
     <q-list class="q-mt-md">
       <sidebar-item to="/" title="Dashboard" :icon="entityIcons.dashboard" />
+      <sidebar-item to="/mitras" title="Mitras" :icon="entityIcons.dashboard" />
+
       <q-expansion-item
         :content-inset-level="0.25"
         :icon="entityIcons.users"

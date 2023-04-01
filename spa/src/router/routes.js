@@ -20,8 +20,8 @@ const routes = [
         component: () => import("src/pages/Roles.vue"),
       },
       {
-        path: "create_roles",
-        name: "create-roles",
+        path: "create-roles",
+        name: "create_roles",
         component: () => import("src/pages/RoleForm.vue"),
       },
       {

@@ -16,6 +16,7 @@
     "localforage": "^1.10.0",
     "lodash-es": "^4.17.21",
     "pinia": "^2.0.29",
+    "pluralize": "^8.0.0",
     "quasar": "^2.6.0",
     "vue": "^3.0.0",
     "vue-router": "^4.0.0"
