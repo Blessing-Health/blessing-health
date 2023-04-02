@@ -12,7 +12,7 @@ const routes = [
       ////////////////////////////////////////////////////////////
       {
         path: "mitras",
-        component: () => import("src/pages/MitrasPage.vue"),
+        component: () => import("src/pages/MitraPages.vue"),
       },
       ////////////////////////////////////////////////////////////
       // User Managment//
