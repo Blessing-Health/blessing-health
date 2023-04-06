@@ -1,6 +1,6 @@
 ## Blessing Health
 
-All frontend code is a standalone Quasar JS app located under /spa
+All frontend code is a standalone Quasar JS app located under `/spa`
 
 ## Getting Started
 
