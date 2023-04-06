@@ -6,9 +6,11 @@ All frontend code is a standalone Quasar JS app located under /spa
 
 Install the dependencies
 
+```
 composer install
 cd spa
 yarn
+```
 
 
 
