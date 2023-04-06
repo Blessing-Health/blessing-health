@@ -4,7 +4,7 @@ All frontend code is a standalone Quasar JS app located under `/spa`
 
 ## Getting Started
 
-Install the dependencies
+### Install the dependencies
 
 ```
 composer install
@@ -14,10 +14,10 @@ yarn
 
 
 
-## Setting up .env
+### Setting up .env
 
-Create a copy of .env.example and rename to .env. This is where you will store your local config.
-Go to spa folder and create a copy of .env.example and rename to .env.
+- Create a copy of `.env.example` and rename to `.env`. This is where you will store your local config.
+- Go to spa folder and create a copy of `.env.example` and rename to `.env`.
 
 
 Setting up the database
