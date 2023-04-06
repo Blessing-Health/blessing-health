@@ -85,9 +85,9 @@ You also need to set the `NODE_PATH` environment variable in your apache config 
 ### Deploying to production (first time setup)
 
 - Deploy the application to the target server with appsync (configure required deployment checks etc)
-- For UAT environments make sure you use yarn build:uat to make a uat build with UAT-specific variables and paths as per .env.uat
-- Create public symlink /home/www/bh -> /home/wwwsites/bh/public
-- Create public symlink for the spa subfolder /home/www/bh/spa -> /home/wwwsites/bh/spa/dist
+- For UAT environments make sure you use `yarn build:uat` to make a uat build with UAT-specific variables and paths as per `.env.uat`
+- Create public symlink `/home/www/bh -> /home/wwwsites/bh/public`
+- Create public symlink for the spa subfolder `/home/www/bh/spa -> /home/wwwsites/bh/spa/dist`
 - Ensure media symlinks exist (as detailed above)
 - Login to the server make sure the .env is properly setup and config cached
 - Run any migrations and seeders
