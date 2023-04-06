@@ -20,18 +20,21 @@ yarn
 - Go to spa folder and create a copy of `.env.example` and rename to `.env`.
 
 
-Setting up the database
+### Setting up the database
+
 Once we go live you can just grab a backup of the production db and use that locally. Otherwise build a new database from scratch:
 
+```
 php artisan migrate --seed
 php artisan import:database
+```
 
 
+### Start the app in development mode (hot-code reloading, error reporting, etc.)
 
-Start the app in development mode (hot-code reloading, error reporting, etc.)
-
+```
 yarn dev
-
+```
 
 
 By default, Quasar uses port 9001 which is specified in spa\quasar.config.js and it's allowed in config\sanctum.php
