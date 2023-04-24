@@ -1,6 +1,5 @@
 # Dashboard (Quasar + Laravel)
 
-A dashboard for 2 loan app
 
 ## Install the dependencies
 
