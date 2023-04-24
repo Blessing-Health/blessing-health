@@ -1,0 +1,1 @@
+import{i as o,b as a}from"./index.823240cf.js";var c="[object AsyncFunction]",e="[object Function]",r="[object GeneratorFunction]",i="[object Proxy]";function b(t){if(!o(t))return!1;var n=a(t);return n==e||n==r||n==c||n==i}export{b as i};
